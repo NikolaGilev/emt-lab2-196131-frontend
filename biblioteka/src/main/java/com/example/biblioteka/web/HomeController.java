@@ -31,6 +31,7 @@ public class HomeController {
     private List<Book> findAll() {
         return this.bookService.findAll();
     }
+
     @GetMapping("/pagination")
     private Page<Book> findAllWithPagination(Pageable pageable) {
         return this.bookService.findAllWithPagination(pageable);
